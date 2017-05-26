@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>04-function</title>
+<script type="text/javascript">
+function disp_prompt()
+  {
+   var num=prompt("请输入一系列数字求最小值（中间用空格隔开，以零结束）","");
+   var str=num.split(" ");
+   var min=parseInt(str[0]);
+    for(i=1;i<str.length;i++){
+      if(parseInt(str[i])<min)
+      min=parseInt(str[i]);
+    }
+   document.write("最小值为："+min);
+  }
+</script>
+</head>
+<body>
+<input type="button" onclick="disp_prompt()"
+value="点此求最小值" />
+</body>
+</html>
