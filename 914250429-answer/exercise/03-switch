@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>03-switch</title>
+<script type="text/javascript">
+function disp_prompt()
+  {
+  var a=prompt("请输入一段文字，判断输入类型","");
+  if(isNaN(a))
+  document.write("不是整数");
+  else{
+    if(Number.isInteger(parseInt(a))) {
+      if(parseInt(a)%2==0)
+      document.write("是偶数");
+      else
+        document.write("是奇数");
+    }
+    else
+      document.write("不是整数");
+    }
+  }
+</script>
+</head>
+<body>
+<input type="button" onclick="disp_prompt()"
+value="switch" />
+</body>
+</html>
