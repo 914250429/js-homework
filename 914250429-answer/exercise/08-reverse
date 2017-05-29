@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>08-reverse</title>
+<script type="text/javascript">
+function a(){
+  var str=prompt("请输入",""); 
+  reverse(str);
+}
+function reverse(str){
+  var arr=str.split('');
+  var temp=[];
+  for(i=arr.length;i!=-1;i--){
+    temp.push(arr[i])
+  }
+  document.write(temp.join(""));
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="a()"
+value="点此逆序" /> 
+</body>
+</html>
